@@ -179,7 +179,7 @@ body {
     margin: 0 0 2em;
     display: inline-block;
     background-color: var(--color3);
-    padding: 0.8em 1.3em;
+    padding: 1em 1.6em;
     border-radius: 50px;
 }
 
@@ -497,6 +497,7 @@ body {
 
     .header nav {
         text-align: center;
+        margin: 0;
     }
 
     .header nav a {
@@ -518,17 +519,31 @@ body {
 
     .beranda .content {
         margin: 200px 0;
-        border: 2px;
+    }
+
+    .beranda .content a {
+        padding: 1.5em 1.7em;
+    }
+
+    .beranda .variation {
+        width: 250px;
+        height: 250px;
     }
 
     .beranda .content-img {
         margin: 0;
         padding: 0;
         margin: -200px auto 0;
+        width: 300px;
+        height: 400px;
+    }
+
+    .about {
+        padding-bottom: 100px;
     }
 
     .about-title {
-        margin-top: 480gitpx;
+        margin-top: 400px;
     }
 
     .about .side-bar1,
@@ -537,7 +552,7 @@ body {
     }
 
     .portfolio .text-content {
-        width: 100%;
+        width: 95%;
     }
 
     .portfolio-card .card  {
@@ -572,14 +587,26 @@ body {
         margin-top: 50px;
     }
 
+    .contact h1 {
+        margin: 20px 0;
+    }
+
     .contact .links {
         margin: auto;
         width: 80%;
     }
 
+    .contact img {
+        filter:saturate(1);
+    }
+
     .copyright .links {
         margin: 30px auto;
         width: 50%;
+    }
+
+    .copyright img {
+        filter:saturate(1);
     }
 
     .footer .side-bar1,
