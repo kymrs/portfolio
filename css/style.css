@@ -71,6 +71,10 @@ table {
 }
 
 /* My Style */
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color1 : #040a1e;
     --color2 : #417578;
@@ -86,6 +90,7 @@ body {
 .container {
     margin: 0 3.5%;
     position: relative;
+    overflow: hidden;
 }
 
 /* Header */
@@ -109,11 +114,16 @@ body {
     font-size: 1.3rem;
 }
 
-.header nav a{
+.header nav a {
     font-family: 'montserrat_medium';
     color: var(--color4);
     text-decoration: none;
     font-size: 1rem;
+    transition: 300ms;
+}
+
+.header nav a:hover{
+    color: var(--color3);
 }
 
 #hamburger-menu {
@@ -181,6 +191,11 @@ body {
     background-color: var(--color3);
     padding: 1em 1.6em;
     border-radius: 50px;
+    transition: 300ms;
+}
+
+.beranda .content a:hover {
+    background-color: #1e6b69;
 }
 
 .beranda .variation {
@@ -188,7 +203,7 @@ body {
     height: 300px;
     background-color: var(--color3);
     position: relative;
-    z-index: -5;
+    z-index: -9999;
     margin: 120px auto 0;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
@@ -209,7 +224,7 @@ body {
 
 /* Tentang Saya */
 .about {
-    padding: 5em 0;
+    padding: 3em 0 10em;
 }
 
 .about-title {
@@ -217,7 +232,7 @@ body {
     color: var(--color3);
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 5em;
+    padding-top: 5em;
 }
 
 .about h1 {
@@ -274,6 +289,7 @@ body {
     padding-bottom: 0.5em;
     font-size: 1.4rem;
     text-align: center;
+    margin-top: 3.5em;
 }
 
 .portfolio h1 {
@@ -292,6 +308,7 @@ body {
     margin: auto;
     line-height: 1.3em;
     padding-bottom: 2em;
+    margin-bottom: 3.5em;
 }
 
 .portfolio .portfolio-card {
@@ -420,6 +437,11 @@ body {
     text-decoration: none;
     font-size: 1rem;
     margin: 0 0 1em 0;
+    transition: 300ms;
+}
+
+.footer .side-bar2 a:hover {
+    color: var(--color3);
 }
 
 .footer .side-bar3 h2 {
@@ -435,6 +457,11 @@ body {
     text-decoration: none;
     font-size: 1rem;
     margin: 0 0 1em 0;
+    transition: 300ms;
+}
+
+.footer .side-bar3 a:hover {
+    color: var(--color3);
 }
 
 /* Copyright */
@@ -533,32 +560,8 @@ body {
         height: 400px;
     }
 
-    /* .beranda .variation {
-        width: 300px;
-        height: 300px;
-        background-color: var(--color3);
-        position: relative;
-        z-index: -5;
-        margin: 120px auto 0;
-        border-top-left-radius: 30%;
-        border-bottom-right-radius: 30%;
-        border-top-right-radius: 40%;
-        border-bottom-left-radius: 50%;
-    }
-    
-    .beranda .content-img {
-        width: 400px;
-        height: 500px;
-        justify-content: center;
-        background-image: url(../img/me.png);
-        background-size: cover;
-        background-position: center;
-        margin-right: 13%;
-        margin-top: 15%;
-    } */
-
     .about-title {
-        margin-top: 400px;
+        margin-top: 280px;
     }
 
     .about .side-bar2 .links{

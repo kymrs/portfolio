@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Rizky Saputra</title>
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-    <div class="header">
+    <div class="header animate__animated animate__fadeInDown">
         <h1 class="title">Rizky Saputra</h1>
             <nav>
-                <a href="#">Beranda</a>
-                <a href="#">Tentang Saya</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+                <a href="#beranda">Beranda</a>
+                <a href="#about">Tentang Saya</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
             </nav>
             <a href="#" id="hamburger-menu"><img src="img/logo/hamburger-menu.svg" alt="hamburger-menu"></a>
     </div>
@@ -21,13 +26,13 @@
     <div class="container">
 
         <!-- Beranda -->
-        <div class="beranda">
-            <div class="content">
+        <div class="beranda" id="beranda">
+            <div class="content animate__animated animate__fadeInLeft">
                 <h3>Halo Semua, saya</h3>
                 <h1>Rizky Saputra</h1>
                 <h2>Produksi Kreatif, Inovatif & <span>UI/UX Desainer</span></h2>
                 <p><span>Pemandangan yang indah datang saat pendakian yang</span> sulit.</p>
-                <div class="button"><a href="#">Hubungi Saya</a></div>
+                <div class="button"><a href="http://wa.me/6289602984422/" target="_blank">Hubungi Saya</a></div>
             </div>
 
             <div class="content-img">
@@ -36,59 +41,67 @@
         </div>
 
         <!-- Tentang Saya -->
-        <h2 class="about-title">Tentang Saya</h2>
+        <h2 class="about-title" id="about" data-aos="fade-down">Tentang Saya</h2>
         <div class="about">
-            <div class="side-bar1">
+            <div class="side-bar1" data-aos="fade-right">
                 <h1>Ayo selalu semangat pelajari hal-hal baru dan jangan pernah menyerah!</h1>
                 <p>Saya terobsesi untuk membuat sesuatu dan bahkan lebih terobsesi untuk membuat sesuatu menjadi lebih baik. Saya berkecimpung dalam dunia web programing sejak saya umur 16 tahun, saya terus mencoba dan mencari tahu bagaimana cara membuat website dengan baik dan benar. Dengan project pertama saya yaitu membuat website statis form sederhana dengan menggunakan bahasa HTML & CSS. Dengan berjalannya waktu saya pun terus mencoba bergerak dibidang web programing karena menurut saya membuat website itu seru dan menyenangkan. Saya adalah desain dan pengembangan web front-end, membuat piksel keajaiban di Figma dan mengubahnya menjadi HTML & CSS semantik yang indah.</p>
             </div>
 
-            <div class="side-bar2">
-                <h1>Mari Berteman</h1>
+            <div class="side-bar2" data-aos="fade-left">
+                <h1 >Mari Berteman</h1>
                 <p>Dengan keterampilan saya yang pandai berkomunikasi, saya dapat dengan mudah bergaul dengan lingkungan baru. Mempelajari hal-hal baru dengan teman itu sangat mengasikan!</p>
                 <div class="links">
-                    <img src="img/logo/instagram.png" alt="instagram">
-                    <img src="img/logo/whatsapp.png" alt="whatsapp">
-                    <img src="img/logo/tiktok.png" alt="tiktok">
-                    <img src="img/logo/youtube.png" alt="youtube">
+                    <a href="https://instagram.com/kyy_5105?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+                        <img src="img/logo/instagram.png" alt="instagram">
+                    </a>
+                    <a href="http://wa.me/6289602984422/" target="_blank">
+                        <img src="img/logo/whatsapp.png" alt="whatsapp">
+                    </a>
+                    <a href="https://www.tiktok.com/@kyy_5105?_t=8eq1pGfWg6R&_r=1" target="_blank">
+                        <img src="img/logo/tiktok.png" alt="tiktok">
+                    </a>
+                    <a href="https://youtube.com/@kyqv1454?si=uhbuaodXw8W8HbON" target="_blank">
+                        <img src="img/logo/youtube.png" alt="youtube">
+                    </a>  
                 </div>
             </div>  
         </div>
 
 
         <!-- Portfolio -->
-        <div class="portfolio">
-            <h3>Portfolio</h3>
-            <h1>Project Terbaru</h1>
-            <p class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui, beatae illo aspernatur modi quibusdam voluptatum consequuntur odit alias dolorum molestias ex voluptatem distinctio minima magni blanditiis dolor iusto quas!</p>
+        <div class="portfolio" id="portfolio">
+            <h3 data-aos="fade-down">Portfolio</h3>
+            <h1 data-aos="zoom-in">Project Terbaru</h1>
+            <p class="text-content" data-aos="zoom-in">Ini adalah beberapa project yang pernah saya buat</p>
             
             <div class="portfolio-card">
-                <div class="card">
+                <div class="card" data-aos="fade-right">
                     <div class="img"><img src="img/portfolio/company-profile.png" alt="Company Profile"></div>
                     <h2>Website Company Profile Bisnis ARD</h2>
                     <p>Saya membuat website company profile bisnis untuk mempromosikan bisnis di sekolah kami. Website ini menggunakan bahasa pemrograman HTML, CSS & Javascript, website ini pun sudah responsive dan bisa dilihat diberbagai macam dimensi layar.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-left">
                     <div class="img"><img src="img/portfolio/desain-figma.png" alt="Desain Figma"></div>
                     <h2>Desain UI Tampilan Login</h2>
                     <p>Desain UI Tampilan Login menggunakan software Figma. Dengan style font dan warna yang memukau dan nyaman dilihat.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-right">
                     <div class="img"><img src="img/portfolio/desain-produk.png" alt="Desain Produk"></div>
                     <h2>Desain Produk Kemasan</h2>
                     <p>Saya membuat desain produk kemasan yang utuh agar kemasan produk terlihat menarik. Dengan menggunakan software Corel Draw saya mampu mendesain segala kebutuhan desain.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <div class="img"><img src="img/portfolio/music-production.png" alt="Music Production"></div>
                     <h2>Music Production</h2>
                     <p>Hobi saya adalah musik dan saya telah membuat beberapa musik menggunakan software FL Studio 20. Saya mampu menghabiskan waktu berhari-hari hanya untuk membuat musik yang utuh.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="img"><img src="img/portfolio/input-pasien.png" alt="Input Pasien"></div>
                     <h2>CRUD - Input Pasien</h2>
                     <p>Saya telah membuat program CRUD menggunakan bahasa PHP untuk membuat program inputan pasien.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="img"><img src="img/portfolio/program-kasir.png" alt="Program Kasir"></div>
                     <h2>Program Kasir</h2>
                     <p>Saya telah mencoba membuat program kasir menggunakan bahasa C++.</p>
@@ -97,20 +110,28 @@
         </div>
 
         <!-- Contact -->
-        <div class="contact">
-            <h3>Contact</h3>
-            <h1>Media Sosial</h1>
+        <div class="contact" id="contact">
+            <h3 data-aos="fade-up">Contact</h3>
+            <h1 data-aos="fade-down">Media Sosial</h1>
 
-            <div class="links">
-                <img src="img/logo/instagram.png" alt="instagram">
-                <img src="img/logo/whatsapp.png" alt="whatsapp">
-                <img src="img/logo/tiktok.png" alt="tiktok">
-                <img src="img/logo/youtube.png" alt="youtube">
+            <div class="links" data-aos="zoom-in">
+                <a href="https://instagram.com/kyy_5105?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+                    <img src="img/logo/instagram.png" alt="instagram">
+                </a>
+                <a href="http://wa.me/6289602984422/" target="_blank">
+                    <img src="img/logo/whatsapp.png" alt="whatsapp">
+                </a>
+                <a href="https://www.tiktok.com/@kyy_5105?_t=8eq1pGfWg6R&_r=1" target="_blank">
+                    <img src="img/logo/tiktok.png" alt="tiktok">
+                </a>
+                <a href="https://youtube.com/@kyqv1454?si=uhbuaodXw8W8HbON" target="_blank">
+                    <img src="img/logo/youtube.png" alt="youtube">
+                </a>  
             </div>
         </div>
 
         <!-- Footer -->
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="side-bar1">
                 <h1>SFU</h1>
                 <h2>Hubungi Kami</h2>
@@ -124,10 +145,10 @@
             </div>
             <div class="side-bar3">
                 <h2>Tautan</h2>
-                <a href="#">Beranda</a>
-                <a href="#">Tentang Saya</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+                <a href="#beranda">Beranda</a>
+                <a href="#about">Tentang Saya</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
 
@@ -138,6 +159,10 @@
 
         <!-- My Javascript -->
         <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
 </body>
 </html>
