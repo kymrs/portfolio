@@ -1,0 +1,221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'montserrat_regular';
+    src: url(../fonts/montserrat-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_medium';
+    src: url(../fonts/montserrat-medium-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_extrabold';
+    src: url(../fonts/montserrat-extrabold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat_semibold';
+    src: url(../fonts/montserrat-semibold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* My Style */
+:root {
+    --color1 : #040a1e;
+    --color2 : #417578;
+    --color3 : #35A29F;
+    --color4 : #eefffd;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+/* Container */
+.container {
+    height: 1000px;
+    margin: 0 3.5%;
+    position: relative;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 2em 3.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.header .title {
+    font-family: 'montserrat_semibold';
+    color: var(--color3);
+    font-size: 1.3rem;
+}
+
+.header nav a{
+    font-family: 'montserrat_medium';
+    color: var(--color4);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header nav a:nth-child(1),
+.header nav a:nth-child(2),
+.header nav a:nth-child(3) {
+    margin-right: 4em;
+}
+
+/* Beranda */
+.beranda {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beranda .content {
+    padding: 5em 0;
+}
+
+.beranda h3,
+.beranda h2,
+.beranda h1 {
+    font-family: 'montserrat_semibold';
+}
+
+.beranda .content h3 {
+    color: var(--color3);
+    font-size: 1rem;
+    padding: 1em 0;
+}
+
+.beranda .content h1 {
+    color: var(--color4);
+    font-size: 2.3rem;
+}
+
+.beranda .content h2 {
+    font-family: 'montserrat_medium';
+    color: var(--color2);
+    padding: 1em 0;
+}
+
+.beranda .content h2 span {
+    color: var(--color4);
+}
+
+.beranda .content p {
+    font-family: 'montserrat_medium';
+    color: var(--color4);
+    padding: 0 0 2em;
+}
+
+.beranda .content a {
+    font-family: 'montserrat_medium';
+    color: var(--color4);
+    text-decoration: none;
+    margin: 0 0 2em;
+    display: inline-block;
+    background-color: var(--color3);
+    padding: 0.8em 1.3em;
+    border-radius: 50px;
+}
+
+.beranda .content-img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tentang Saya */
+.about {
+    display: flex;
+}
+
+.about-title {
+    font-family: 'montserrat_semibold';
+    color: var(--color3);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+}
+
+.about h1 {
+    font-family: 'montserrat_semibold';
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
+.about p {
+    font-family: 'montserrat_regular';
+    line-height: 1.3em;
+    color: var(--color2);
+}
+
+.about .side-bar1 {
+    color: var(--color4);
+    width: 50%;
+    padding-right: 4%;
+}
+
+.about .side-bar2 {
+    color: var(--color4);
+    width: 50%;
+}
