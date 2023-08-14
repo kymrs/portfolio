@@ -524,21 +524,19 @@ body {
     .beranda .content-img {
         margin: 0;
         padding: 0;
-        margin: -300px auto 0;
+        margin: -200px auto 0;
     }
 
     .about-title {
-        margin-top: 380px;
+        margin-top: 480px;
     }
 
     .about .side-bar1,
     .about .side-bar2 {
-        border: 2px solid red;
         width: 100%;
     }
 
     .portfolio .text-content {
-        border: 2px solid red;
         width: 100%;
     }
 
