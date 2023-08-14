@@ -224,12 +224,14 @@ body {
     font-family: 'montserrat_semibold';
     font-size: 2rem;
     padding-bottom: 1em;
+    line-height: 1.3em;
 }
 
 .about p {
     font-family: 'montserrat_regular';
-    line-height: 1.3em;
+    line-height: 1.4em;
     color: var(--color2);
+    text-align: justify;
 }
 
 .about .side-bar1 {
@@ -241,6 +243,20 @@ body {
 .about .side-bar2 {
     color: var(--color4);
     width: 50%;
+}
+
+.about .side-bar2 .links {
+    margin: 2em 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .side-bar2 .links img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 /* Portfolio */
@@ -279,7 +295,7 @@ body {
 }
 
 .portfolio .portfolio-card {
-    background-color: rgba(4, 10, 30, 0.6);
+    background-color: rgba(4, 10, 30, 0.3);
     margin: 0 1%;
     border-radius: 5px;
     padding: 2em 7%;
@@ -289,17 +305,15 @@ body {
 
 .portfolio .card {
     width: 45%;
-    object-fit: cover;
 }
 
 .portfolio .card img {
-    object-fit: cover;
-    width: 500px;
-    height: 300px;
+    width: 472px;
+    height: 250px;
 }
 
 .portfolio .card .img {
-    height: 17em;
+    height: 250px;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -315,6 +329,7 @@ body {
     color: var(--color2);
     line-height: 1.3em;
     margin-bottom: 2em;
+    text-align: justify;
 }
 
 /* Contact */
@@ -425,33 +440,13 @@ body {
 /* Copyright */
 .copyright {
     text-align: center;
-    padding: 0 0 2em;
-}
-
-.copyright .links {
-    width: 20%;
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
-    margin: 1.7em auto;
-}
-
-.copyright img {
-    border-radius: 50%;
-    cursor: pointer;
-    filter:saturate(0);
-    transition: 300ms;
-    width: 35px;
-    height: 35px;
-}
-
-.copyright img:hover {
-    filter: saturate(1);
 }
 
 .copyright p {
     font-family: 'montserrat_regular';
     color: var(--color4);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .copyright a {
@@ -546,6 +541,11 @@ body {
         margin-top: 400px;
     }
 
+    .about .side-bar2 .links{
+        width: 50%;
+        margin: 50px auto 0;
+    }
+
     .about .side-bar1,
     .about .side-bar2 {
         width: 100%;
@@ -598,6 +598,8 @@ body {
 
     .contact img {
         filter:saturate(1);
+        width: 45px;
+        height: 45px;
     }
 
     .copyright .links {
@@ -634,6 +636,7 @@ body {
 
     .about {
         display: flex;
+        align-items: center;
     }
 
     .footer {
