@@ -84,7 +84,6 @@ body {
 
 /* Container */
 .container {
-    height: 1000px;
     margin: 0 3.5%;
     position: relative;
 }
@@ -101,6 +100,7 @@ body {
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(65, 117, 120, 0.3);
 }
 
 .header .title {
@@ -114,6 +114,10 @@ body {
     color: var(--color4);
     text-decoration: none;
     font-size: 1rem;
+}
+
+#hamburger-menu {
+    display: none;
 }
 
 .header nav a:nth-child(1),
@@ -132,6 +136,7 @@ body {
 
 .beranda .content {
     padding: 5em 0;
+    margin-top: 10em;
 }
 
 .beranda h3,
@@ -178,15 +183,33 @@ body {
     border-radius: 50px;
 }
 
+.beranda .variation {
+    width: 300px;
+    height: 300px;
+    background-color: var(--color3);
+    position: relative;
+    z-index: -5;
+    margin: 120px auto 0;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 50%;
+}
+
 .beranda .content-img {
-    width: 60%;
-    display: flex;
+    width: 400px;
+    height: 500px;
     justify-content: center;
+    background-image: url(../img/me.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 13%;
+    margin-top: 15%;
 }
 
 /* Tentang Saya */
 .about {
-    display: flex;
+    padding: 5em 0;
 }
 
 .about-title {
@@ -194,7 +217,7 @@ body {
     color: var(--color3);
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 1.5em;
+    margin-top: 5em;
 }
 
 .about h1 {
@@ -218,4 +241,377 @@ body {
 .about .side-bar2 {
     color: var(--color4);
     width: 50%;
+}
+
+/* Portfolio */
+.portfolio {
+    color: var(--color4);
+    background-color: #0c1842;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(2, 5, 14, .7), -5px -5px 5px rgba(2, 5, 14, .7);
+    padding: 2.3em 0;
+}
+
+.portfolio h3 {
+    font-family: 'montserrat_semibold';
+    color: var(--color3);
+    padding-bottom: 0.5em;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-family: 'montserrat_semibold';
+    color: var(--color4);
+    font-size: 2.5rem;
+    padding: 0 0 0.3em;
+    text-align: center;
+}
+
+.portfolio .text-content {
+    font-family: 'montserrat_regular';
+    color: var(--color2);
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    line-height: 1.3em;
+    padding-bottom: 2em;
+}
+
+.portfolio .portfolio-card {
+    background-color: rgba(4, 10, 30, 0.6);
+    margin: 0 1%;
+    border-radius: 5px;
+    padding: 2em 7%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .card {
+    width: 45%;
+    object-fit: cover;
+}
+
+.portfolio .card img {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.portfolio .card .img {
+    height: 17em;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.portfolio .card h2 {
+    font-family: 'montserrat_semibold';
+    font-size: 1.5rem;
+    padding: 0.7em 0;
+}
+
+.portfolio .card p {
+    font-family: 'montserrat_regular';
+    color: var(--color2);
+    line-height: 1.3em;
+    margin-bottom: 2em;
+}
+
+/* Contact */
+.contact {
+    color: var(--color4);
+    padding: 15em 0;
+}
+
+.contact h3 {
+    font-family: 'montserrat_semibold';
+    color: var(--color3);
+    padding-bottom: 0.5em;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.contact h1 {
+    font-family: 'montserrat_semibold';
+    color: var(--color4);
+    font-size: 2.5rem;
+    padding: 0 0 0.3em;
+    text-align: center;
+}
+
+.contact .links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto 0;
+}
+
+.contact img {
+    border-radius: 50%;
+    cursor: pointer;
+    filter:saturate(0);
+    transition: 300ms;
+    width: 60px;
+    height: 60px;
+}
+
+.contact img:hover {
+    filter: saturate(1);
+}
+
+/* Footer */
+.footer {
+    padding: 0 0 3em;
+}
+
+.footer a {
+    display: block;
+}
+
+.footer .side-bar1,
+.footer .side-bar2,
+.footer .side-bar3 {
+    padding: 0 14% 0 0;
+}
+
+.footer .side-bar1 h1 {
+    font-family: 'montserrat_semibold';
+    font-size: 2rem;
+    color: var(--color4);
+}
+
+.footer .side-bar1 h2 {
+    font-family: 'montserrat_semibold';
+    font-size: 1.3rem;
+    color: var(--color2);
+    padding: 1rem 0;
+}
+.footer .side-bar1 p {
+    font-family: 'montserrat_regular';
+    color: var(--color2);
+    line-height: 1.3em;
+}
+
+.footer .side-bar2 h2 {
+    font-family: 'montserrat_semibold';
+    font-size: 1.3rem;
+    color: var(--color4);
+    margin-bottom: 1em;
+}
+
+.footer .side-bar2 a {
+    font-family: 'montserrat_medium';
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 0 1em 0;
+}
+
+.footer .side-bar3 h2 {
+    font-family: 'montserrat_semibold';
+    font-size: 1.3rem;
+    color: var(--color4);
+    margin-bottom: 1em;
+}
+
+.footer .side-bar3 a {
+    font-family: 'montserrat_medium';
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 0 1em 0;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding: 0 0 2em;
+}
+
+.copyright .links {
+    width: 20%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.7em auto;
+}
+
+.copyright img {
+    border-radius: 50%;
+    cursor: pointer;
+    filter:saturate(0);
+    transition: 300ms;
+    width: 35px;
+    height: 35px;
+}
+
+.copyright img:hover {
+    filter: saturate(1);
+}
+
+.copyright p {
+    font-family: 'montserrat_regular';
+    color: var(--color4);
+}
+
+.copyright a {
+    font-family: 'montserrat_medium';
+    color: var(--color3);
+}
+
+
+/* Media Queries */
+
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 78.5%;
+    }
+
+    .header #hamburger-menu {
+        display: inline-block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(53, 162, 159, 0.7);
+        width: 20em;
+        transition: 0.3s;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+
+    .header nav.active {
+        right: 0;
+    }
+
+    .header nav {
+        text-align: center;
+    }
+
+    .header nav a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+
+    .header nav a:nth-child(1),
+    .header nav a:nth-child(2),
+    .header nav a:nth-child(3) {
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .beranda {
+        flex-wrap: wrap;
+    }
+
+    .beranda .content {
+        margin: 200px 0;
+        border: 2px;
+    }
+
+    .beranda .content-img {
+        margin: 0;
+        padding: 0;
+        margin: -300px auto 0;
+    }
+
+    .about-title {
+        margin-top: 380px;
+    }
+
+    .about .side-bar1,
+    .about .side-bar2 {
+        border: 2px solid red;
+        width: 100%;
+    }
+
+    .portfolio .text-content {
+        border: 2px solid red;
+        width: 100%;
+    }
+
+    .portfolio-card .card  {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio-card .card .img {
+        height: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .portfolio-card .card p {
+        margin-bottom: 50px;
+    }
+
+    .about {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about .side-bar1 {
+        padding: 0;
+        margin: auto;
+    }
+
+    .about .side-bar2 {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .contact .links {
+        margin: auto;
+        width: 80%;
+    }
+
+    .copyright .links {
+        margin: 30px auto;
+        width: 50%;
+    }
+
+    .footer .side-bar1,
+    .footer .side-bar2,
+    .footer .side-bar3 {
+        margin: 30px 0;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .portfolio-card .card .img {
+        height: 200px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .portfolio-card {
+        display: flex;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .footer {
+        display: flex;
+    }
 }
