@@ -192,6 +192,7 @@ body {
     padding: 1em 1.6em;
     border-radius: 50px;
     transition: 300ms;
+    box-shadow: 3px 3px 4px rgba(53, 162, 159, 0.5);
 }
 
 .beranda .content a:hover {
@@ -201,7 +202,7 @@ body {
 .beranda .variation {
     width: 300px;
     height: 300px;
-    background-color: var(--color3);
+    background: linear-gradient(var(--color2), #1e3686, #384353);
     position: relative;
     z-index: -9999;
     margin: 120px auto 0;
@@ -342,6 +343,82 @@ body {
 }
 
 .portfolio .card p {
+    font-family: 'montserrat_regular';
+    color: var(--color2);
+    line-height: 1.3em;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+/* Certificate */
+.certificate {
+    color: var(--color4);
+    background-color: #0c1842;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(2, 5, 14, .7), -5px -5px 5px rgba(2, 5, 14, .7);
+    padding: 2.3em 0;
+    margin-top: 50px;
+}
+
+.certificate h3 {
+    font-family: 'montserrat_semibold';
+    color: var(--color3);
+    padding-bottom: 0.5em;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 3.5em;
+}
+
+.certificate h1 {
+    font-family: 'montserrat_semibold';
+    color: var(--color4);
+    font-size: 2.5rem;
+    padding: 0 0 0.3em;
+    text-align: center;
+}
+
+.certificate .text-content {
+    font-family: 'montserrat_regular';
+    color: var(--color2);
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    line-height: 1.3em;
+    padding-bottom: 2em;
+    margin-bottom: 3.5em;
+}
+
+.certificate .certificate-card {
+    background-color: rgba(4, 10, 30, 0.3);
+    margin: 0 1%;
+    border-radius: 5px;
+    padding: 2em 7%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.certificate .card {
+    width: 45%;
+}
+
+.certificate .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.certificate .card .img {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+}
+
+.certificate .card h2 {
+    font-family: 'montserrat_semibold';
+    font-size: 1.5rem;
+    padding: 0.7em 0;
+}
+
+.certificate .card p {
     font-family: 'montserrat_regular';
     color: var(--color2);
     line-height: 1.3em;
@@ -593,10 +670,28 @@ body {
     .portfolio-card .card p {
         margin-bottom: 50px;
     }
+    .certificate .text-content {
+        width: 95%;
+    }
+
+    .certificate-card .card  {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .certificate-card .card .img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .certificate-card .card p {
+        margin-bottom: 50px;
+    }
 
     .about {
         text-align: center;
-        width: 100%;
     }
 
     .about .side-bar1 {
@@ -607,6 +702,11 @@ body {
     .about .side-bar2 {
         margin: auto;
         margin-top: 50px;
+        
+    }
+
+    .about .links {
+        border: 2px solid red;
     }
 
     .contact h1 {
@@ -653,6 +753,10 @@ body {
 @media (min-width: 768px) {
 
     .portfolio-card {
+        display: flex;
+    }
+
+    .certificate-card {
         display: flex;
     }
 
