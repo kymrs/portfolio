@@ -139,7 +139,7 @@ body {
 
 /* Beranda */
 .beranda {
-    height: 600px;
+    height: 630px;
     display: flex;
     justify-content: space-between;
     align-items: center;
