@@ -76,10 +76,9 @@ html {
 }
 
 :root {
-    --color1 : #040a1e;
-    --color2 : #417578;
-    --color3 : #35A29F;
-    --color4 : #eefffd;
+    --color1 : #ffffff;
+    --color2 : #070707;
+    --color3 : #1EB872;
 }
 
 body {
@@ -111,7 +110,7 @@ body {
 .header .title {
     font-family: 'montserrat_semibold';
     color: var(--color3);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .header nav a {
@@ -139,7 +138,7 @@ body {
 
 /* Beranda */
 .beranda {
-    height: 630px;
+    height: 650px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,34 +157,35 @@ body {
 
 .beranda .content h3 {
     color: var(--color3);
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1em 0;
 }
 
 .beranda .content h1 {
-    color: var(--color4);
-    font-size: 2.3rem;
+    color: var(--color2);
+    font-size: 2.6rem;
 }
 
 .beranda .content h2 {
     font-family: 'montserrat_medium';
     color: var(--color2);
     padding: 1em 0;
+    font-size: 1.4rem;
 }
 
 .beranda .content h2 span {
-    color: var(--color4);
+    color: var(--color3);
 }
 
 .beranda .content p {
     font-family: 'montserrat_medium';
-    color: var(--color4);
+    color: var(--color2);
     padding: 0 0 2em;
 }
 
 .beranda .content a {
     font-family: 'montserrat_medium';
-    color: var(--color4);
+    color: var(--color2);
     text-decoration: none;
     margin: 0 0 2em;
     display: inline-block;
@@ -193,17 +193,23 @@ body {
     padding: 1em 1.6em;
     border-radius: 50px;
     transition: 300ms;
-    box-shadow: 2px 2px 5px rgba(53, 162, 159, 0.4);
+    box-shadow: 2px 2px 7px var(--color2);
 }
 
 .beranda .content a:hover {
     background-color: #1e6b69;
 }
 
+.beranda .cta {
+    display: flex;
+    justify-content:space-between;
+    width: 75%;
+}
+
 .beranda .variation {
     width: 300px;
     height: 300px;
-    background: linear-gradient(var(--color2), #1e3686, #384353);
+    background: linear-gradient(var(--color3) 60%, var(--color2));
     position: relative;
     z-index: -9999;
     margin: 120px auto 0;
@@ -226,12 +232,15 @@ body {
 
 /* Tentang Saya */
 .about {
-    padding: 3em 0 10em;
+    padding: 3em 0 5em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:normal;
 }
 
 .about-title {
     font-family: 'montserrat_semibold';
-    color: var(--color3);
+    color: var(--color2);
     text-align: center;
     font-size: 1.5rem;
     padding-top: 5em;
@@ -242,6 +251,7 @@ body {
     font-size: 2rem;
     padding-bottom: 1em;
     line-height: 1.3em;
+    color: var(--color3);
 }
 
 .about p {
@@ -252,18 +262,27 @@ body {
 }
 
 .about .side-bar1 {
-    color: var(--color4);
+    color: var(--color2);
     width: 50%;
+    box-sizing: border-box;
     padding-right: 4%;
 }
 
 .about .side-bar2 {
-    color: var(--color4);
+    color: var(--color2);
     width: 50%;
+    box-sizing: border-box;
+}
+
+.about .side-bar3 {
+    color: var(--color2);
+    width: 50%;
+    margin-top: 2em;
+    text-align: center;
 }
 
 .about .side-bar2 .links {
-    margin: 2em 0;
+    margin: 2em 0 0.6em;
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -276,13 +295,31 @@ body {
     cursor: pointer;
 }
 
+.about .side-bar3 {
+    width: 80%;
+    margin: 5em auto 0;
+}
+
+.about .side-bar3 .skill {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .side-bar3 .card {
+    width: 26%;
+    margin: 0 auto 3em;
+}
+
+.about .side-bar3 .card h1 {
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0.5em 0;
+}
+
 /* Portfolio */
 .portfolio {
-    color: var(--color4);
-    background-color: #0c1842;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px rgba(2, 5, 14, .7), -5px -5px 5px rgba(2, 5, 14, .7);
-    padding: 2.3em 0;
+    color: var(--color2);
+    padding: 2.3em 0 0;
 }
 
 .portfolio h3 {
@@ -296,7 +333,7 @@ body {
 
 .portfolio h1 {
     font-family: 'montserrat_semibold';
-    color: var(--color4);
+    color: var(--color2);
     font-size: 2.5rem;
     padding: 0 0 0.3em;
     text-align: center;
@@ -314,10 +351,8 @@ body {
 }
 
 .portfolio .portfolio-card {
-    background-color: rgba(4, 10, 30, 0.3);
     margin: 0 1%;
-    border-radius: 5px;
-    padding: 2em 7%;
+    padding: 0 7%;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
@@ -332,7 +367,7 @@ body {
 }
 
 .portfolio-card .card a:hover {
-    color: var(--color4);
+    color: var(--color2);
 }
 
 .portfolio .card img {
@@ -358,11 +393,8 @@ body {
 
 /* Certificate */
 .certificate {
-    color: var(--color4);
-    background-color: #0c1842;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px rgba(2, 5, 14, .7), -5px -5px 5px rgba(2, 5, 14, .7);
-    padding: 2.3em 0;
+    color: var(--color2);
+    padding: 2.3em 0 0;
     margin-top: 50px;
 }
 
@@ -377,7 +409,7 @@ body {
 
 .certificate h1 {
     font-family: 'montserrat_semibold';
-    color: var(--color4);
+    color: var(--color2);
     font-size: 2.5rem;
     padding: 0 0 0.3em;
     text-align: center;
@@ -395,10 +427,8 @@ body {
 }
 
 .certificate .certificate-card {
-    background-color: rgba(4, 10, 30, 0.3);
     margin: 0 1%;
-    border-radius: 5px;
-    padding: 2em 7%;
+    padding: 0 7%;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
@@ -431,7 +461,7 @@ body {
 
 /* Contact */
 .contact {
-    color: var(--color4);
+    color: var(--color2);
     padding: 15em 0;
 }
 
@@ -445,7 +475,7 @@ body {
 
 .contact h1 {
     font-family: 'montserrat_semibold';
-    color: var(--color4);
+    color: var(--color2);
     font-size: 2.5rem;
     padding: 0 0 0.3em;
     text-align: center;
@@ -489,7 +519,7 @@ body {
 .footer .side-bar1 h1 {
     font-family: 'montserrat_semibold';
     font-size: 2rem;
-    color: var(--color4);
+    color: var(--color2);
 }
 
 .footer .side-bar1 h2 {
@@ -507,7 +537,7 @@ body {
 .footer .side-bar2 h2 {
     font-family: 'montserrat_semibold';
     font-size: 1.3rem;
-    color: var(--color4);
+    color: var(--color2);
     margin-bottom: 1em;
 }
 
@@ -527,7 +557,7 @@ body {
 .footer .side-bar3 h2 {
     font-family: 'montserrat_semibold';
     font-size: 1.3rem;
-    color: var(--color4);
+    color: var(--color2);
     margin-bottom: 1em;
 }
 
@@ -551,7 +581,7 @@ body {
 
 .copyright p {
     font-family: 'montserrat_regular';
-    color: var(--color4);
+    color: var(--color2);
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -564,18 +594,24 @@ body {
 
 /* Media Queries */
 
+/* Desktop */
+@media (max-width: 1400px) {
+    html {
+        font-size: 115%;
+    }
+}
 
 /* Laptop */
 @media (max-width: 1366px) {
     html {
-        font-size: 90%;
+        font-size: 100%;
     }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 78.5%;
+        font-size: 85%;
     }
 
     .header #hamburger-menu {
@@ -586,7 +622,7 @@ body {
         position: absolute;
         top: 100%;
         right: -100%;
-        background-color: rgba(53, 162, 159, 0.7);
+        background-color: rgba(30, 184, 114, 0.7);
         width: 20em;
         transition: 0.3s;
         margin-top: 30px;
@@ -667,6 +703,15 @@ body {
     .about .side-bar2 {
         margin: auto;
         margin-top: 50px;
+    }
+
+    .about .side-bar3 .card {
+        width: 80%;
+        margin-bottom: 5em;
+    }
+
+    .portfolio h3 {
+        margin-top: 0;
     }
 
     .portfolio .text-content {
@@ -750,6 +795,9 @@ body {
 }
 
 @media (min-width: 768px) {
+    .skill {
+        display: flex;
+    }
 
     .portfolio-card {
         display: flex;
