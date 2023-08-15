@@ -138,7 +138,7 @@ body {
 
 /* Beranda */
 .beranda {
-    height: 100vh;
+    height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,13 +186,13 @@ body {
     font-family: 'montserrat_medium';
     color: var(--color4);
     text-decoration: none;
-    margin: 0 0 2em;
+    margin: 0 0 2em 1.3%;
     display: inline-block;
     background-color: var(--color3);
     padding: 1em 1.6em;
     border-radius: 50px;
     transition: 300ms;
-    box-shadow: 3px 3px 4px rgba(53, 162, 159, 0.5);
+    box-shadow: 0 0 10px rgba(53, 162, 159, 0.5);
 }
 
 .beranda .content a:hover {
@@ -642,13 +642,27 @@ body {
     }
 
     .about .side-bar2 .links{
-        width: 50%;
+        width: 65%;
         margin: 50px auto 0;
     }
 
     .about .side-bar1,
     .about .side-bar2 {
         width: 100%;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about .side-bar1 {
+        padding: 0;
+        margin: auto;
+    }
+
+    .about .side-bar2 {
+        margin: auto;
+        margin-top: 50px;
     }
 
     .portfolio .text-content {
@@ -688,25 +702,6 @@ body {
 
     .certificate-card .card p {
         margin-bottom: 50px;
-    }
-
-    .about {
-        text-align: center;
-    }
-
-    .about .side-bar1 {
-        padding: 0;
-        margin: auto;
-    }
-
-    .about .side-bar2 {
-        margin: auto;
-        margin-top: 50px;
-        
-    }
-
-    .about .links {
-        border: 2px solid red;
     }
 
     .contact h1 {
