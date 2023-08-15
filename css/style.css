@@ -327,6 +327,14 @@ body {
     width: 45%;
 }
 
+.portfolio-card .card a {
+    color: var(--color3);
+}
+
+.portfolio-card .card a:hover {
+    color: var(--color4);
+}
+
 .portfolio .card img {
     width: 100%;
     height: 100%;
