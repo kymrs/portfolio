@@ -138,7 +138,7 @@ body {
 
 /* Beranda */
 .beranda {
-    height: 650px;
+    height: 680px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,6 +194,7 @@ body {
     border-radius: 50px;
     transition: 300ms;
     box-shadow: 2px 2px 7px var(--color2);
+    font-size: 0.8rem;
 }
 
 .beranda .content a:hover {
@@ -203,7 +204,7 @@ body {
 .beranda .cta {
     display: flex;
     justify-content:space-between;
-    width: 75%;
+    width: 60%;
 }
 
 .beranda .variation {
@@ -604,14 +605,14 @@ body {
 /* Laptop */
 @media (max-width: 1366px) {
     html {
-        font-size: 100%;
+        font-size: 90%;
     }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 85%;
+        font-size: 83%;
     }
 
     .header #hamburger-menu {
@@ -675,6 +676,10 @@ body {
         margin: -200px auto 0;
         width: 300px;
         height: 400px;
+    }
+
+    .beranda .cta {
+        width: 75%;
     }
 
     .about-title {
