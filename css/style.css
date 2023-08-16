@@ -121,6 +121,10 @@ body {
     transition: 300ms;
 }
 
+.header img {
+    cursor: pointer;
+}
+
 .header nav a:hover{
     color: var(--color3);
 }
