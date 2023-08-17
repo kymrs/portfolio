@@ -149,19 +149,19 @@ body {
 }
 
 .header .btn-darkmode .theme:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .header .btn-darkmode .theme:active {
-    transform: scale(0.9);
+    transform: scale(0.85);
 }
 
 .header .btn-darkmode .dark:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .header .btn-darkmode .dark:active {
-    transform: scale(0.9);
+    transform: scale(0.85);
 }
 
 #darkmode {
@@ -737,6 +737,38 @@ body {
     }
 }
 
+@media (max-width: 1200px) {
+    .header #hamburger-menu {
+        display: inline-block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(30, 184, 114, 0.7);
+        width: 20em;
+        transition: 0.3s;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+
+    .header nav.active {
+        right: 0;
+    }
+
+    .header nav {
+        text-align: center;
+        margin: 0;
+    }
+
+    .header nav a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
     html {
@@ -916,13 +948,14 @@ body {
 
 }
 
-@media (max-width: 450px) {
-    .portfolio-card .card .img {
-        height: 200px;
-        object-fit: cover;
-        background-position: center;
-        background-size: cover;
+@media (max-width: 400px) {
+    .header .btn-darkmode {
+        margin-right: 30px;
     }
+
+   .beranda .cta {
+        width: 80%;
+   }
 }
 
 @media (min-width: 768px) {
