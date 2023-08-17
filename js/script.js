@@ -13,3 +13,9 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+// Dark  Mode
+function ubahMode() {
+  const ubah = document.body;
+  ubah.classList.toggle("dark");
+}

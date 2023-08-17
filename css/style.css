@@ -107,6 +107,10 @@ body {
     border-bottom: 1px solid rgba(65, 117, 120, 0.3);
 }
 
+.header nav {
+    margin-left: 30%;
+}
+
 .header .title {
     font-family: 'montserrat_semibold';
     color: var(--color3);
@@ -119,6 +123,43 @@ body {
     text-decoration: none;
     font-size: 1rem;
     transition: 300ms;
+}
+
+.header input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    transition: .5 ease;
+    cursor: pointer;
+}
+
+.header input[type="checkbox"]:checked {
+    background-color: #17915a;
+}
+
+.header input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+.header input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+.dark {
+    background-color: #161616;
+    transition: .5 ease;
+    color: rgb(246, 246, 246);
 }
 
 .header img {
@@ -136,7 +177,8 @@ body {
 .header nav a:nth-child(1),
 .header nav a:nth-child(2),
 .header nav a:nth-child(3),
-.header nav a:nth-child(4) {
+.header nav a:nth-child(4),
+.header nav a:nth-child(5) {
     margin-right: 4em;
 }
 
@@ -146,6 +188,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 300ms;
 }
 
 .beranda .content {
@@ -166,13 +209,11 @@ body {
 }
 
 .beranda .content h1 {
-    color: var(--color2);
     font-size: 3rem;
 }
 
 .beranda .content h2 {
     font-family: 'montserrat_medium';
-    color: var(--color2);
     padding: 1em 0 0;
     font-size: 1.4rem;
 }
@@ -187,7 +228,6 @@ body {
 
 .beranda .content p {
     font-family: 'montserrat_medium';
-    color: var(--color2);
     padding: 0 0 2em;
     font-style: italic;
 }
@@ -281,15 +321,15 @@ body {
     padding: 3em 0 5em;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:normal;
+    transition: 300ms;
 }
 
 .about-title {
     font-family: 'montserrat_semibold';
-    color: var(--color2);
     text-align: center;
     font-size: 1.5rem;
     padding-top: 5em;
+    transition: 300ms;
 }
 
 .about h1 {
@@ -303,25 +343,21 @@ body {
 .about p {
     font-family: 'montserrat_regular';
     line-height: 1.4em;
-    color: var(--color2);
     text-align: justify;
 }
 
 .about .side-bar1 {
-    color: var(--color2);
     width: 50%;
     box-sizing: border-box;
     padding-right: 4%;
 }
 
 .about .side-bar2 {
-    color: var(--color2);
     width: 50%;
     box-sizing: border-box;
 }
 
 .about .side-bar3 {
-    color: var(--color2);
     width: 50%;
     margin-top: 2em;
     text-align: center;
@@ -382,8 +418,8 @@ body {
 
 /* Portfolio */
 .portfolio {
-    color: var(--color2);
     padding: 2.3em 0 0;
+    transition: 300ms;
 }
 
 .portfolio h3 {
@@ -397,7 +433,6 @@ body {
 
 .portfolio h1 {
     font-family: 'montserrat_semibold';
-    color: var(--color2);
     font-size: 2.5rem;
     padding: 0 0 0.3em;
     text-align: center;
@@ -405,7 +440,6 @@ body {
 
 .portfolio .text-content {
     font-family: 'montserrat_regular';
-    color: var(--color2);
     text-align: center;
     width: 45%;
     margin: auto;
@@ -461,7 +495,6 @@ body {
 
 .portfolio .card p {
     font-family: 'montserrat_regular';
-    color: var(--color2);
     line-height: 1.3em;
     margin-bottom: 2em;
     text-align: justify;
@@ -469,9 +502,9 @@ body {
 
 /* Certificate */
 .certificate {
-    color: var(--color2);
     padding: 2.3em 0 0;
     margin-top: 50px;
+    transition: 300ms;
 }
 
 .certificate h3 {
@@ -485,7 +518,6 @@ body {
 
 .certificate h1 {
     font-family: 'montserrat_semibold';
-    color: var(--color2);
     font-size: 2.5rem;
     padding: 0 0 0.3em;
     text-align: center;
@@ -493,7 +525,6 @@ body {
 
 .certificate .text-content {
     font-family: 'montserrat_regular';
-    color: var(--color2);
     text-align: center;
     width: 45%;
     margin: auto;
@@ -541,7 +572,6 @@ body {
 
 .certificate .card p {
     font-family: 'montserrat_regular';
-    color: var(--color2);
     line-height: 1.3em;
     margin-bottom: 2em;
     text-align: justify;
@@ -549,8 +579,8 @@ body {
 
 /* Contact */
 .contact {
-    color: var(--color2);
     padding: 15em 0;
+    transition: 300ms;
 }
 
 .contact h3 {
@@ -563,7 +593,6 @@ body {
 
 .contact h1 {
     font-family: 'montserrat_semibold';
-    color: var(--color2);
     font-size: 2.5rem;
     padding: 0 0 0.3em;
     text-align: center;
@@ -591,10 +620,12 @@ body {
 /* Footer */
 .footer {
     padding: 0 0 3em;
+    transition: 300ms;
 }
 
 .footer a {
     display: block;
+    color: var(--color4);
 }
 
 .footer .side-bar1,
@@ -606,31 +637,26 @@ body {
 .footer .side-bar1 h1 {
     font-family: 'montserrat_semibold';
     font-size: 2rem;
-    color: var(--color2);
 }
 
 .footer .side-bar1 h2 {
     font-family: 'montserrat_semibold';
     font-size: 1.3rem;
-    color: var(--color2);
     padding: 1rem 0;
 }
 .footer .side-bar1 p {
     font-family: 'montserrat_regular';
-    color: var(--color2);
     line-height: 1.3em;
 }
 
 .footer .side-bar2 h2 {
     font-family: 'montserrat_semibold';
     font-size: 1.3rem;
-    color: var(--color2);
     margin-bottom: 1em;
 }
 
 .footer .side-bar2 a {
     font-family: 'montserrat_medium';
-    color: var(--color2);
     text-decoration: none;
     font-size: 1rem;
     margin: 0 0 1em 0;
@@ -644,13 +670,11 @@ body {
 .footer .side-bar3 h2 {
     font-family: 'montserrat_semibold';
     font-size: 1.3rem;
-    color: var(--color2);
     margin-bottom: 1em;
 }
 
 .footer .side-bar3 a {
     font-family: 'montserrat_medium';
-    color: var(--color2);
     text-decoration: none;
     font-size: 1rem;
     margin: 0 0 1em 0;
@@ -664,11 +688,11 @@ body {
 /* Copyright */
 .copyright {
     text-align: center;
+    transition: 300ms;
 }
 
 .copyright p {
     font-family: 'montserrat_regular';
-    color: var(--color2);
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -737,6 +761,11 @@ body {
     .header nav a:nth-child(4) {
         margin-right: 0;
         padding: 0;
+    }
+
+    .header input {
+        position: relative;
+        left: 15%;
     }
 
     .beranda {
