@@ -868,9 +868,6 @@ body {
         padding: 0;
     }
 
-    .portfolio-card .card p {
-        margin-bottom: 50px;
-    }
     .certificate .text-content {
         width: 95%;
     }
@@ -885,10 +882,6 @@ body {
     .certificate-card .card .img {
         margin: 0;
         padding: 0;
-    }
-
-    .certificate-card .card p {
-        margin-bottom: 50px;
     }
 
     .contact h1 {
