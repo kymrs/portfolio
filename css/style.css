@@ -71,6 +71,10 @@ table {
 }
 
 /* My Style */
+.animate__delay1 {
+    animation-delay: 1.5s;
+}
+
 html {
     scroll-behavior: smooth;
 }
