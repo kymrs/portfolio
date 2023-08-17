@@ -393,6 +393,7 @@ body {
 .about .side-bar3 .skill {
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .about .side-bar3 .image {
@@ -461,14 +462,21 @@ body {
 
 .portfolio .card {
     width: 45%;
+    margin-bottom: 70px;
 }
 
 .portfolio-card .card a {
-    color: var(--color3);
+    font-family: 'montserrat_regular';
+    color: var(--color4);
+    text-decoration: none;
+    background-color: var(--color3);
+    padding: 1em 1.6em;
+    border-radius: 15px;
+    transition: 300ms;
 }
 
 .portfolio-card .card a:hover {
-    color: var(--color2);
+    background-color: #137b4c;
 }
 
 .portfolio .card img {
@@ -477,8 +485,6 @@ body {
     border-radius: 10px;
     border: 3px solid #403b3b;
     box-sizing: border-box;
-    transition: 300ms;
-    cursor: pointer;
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -486,9 +492,6 @@ body {
         0 22.3px 17.9px rgba(0, 0, 0, 0.065);
 }
 
-.portfolio .card img:hover {
-    transform: scale(1.02);
-}
 
 .portfolio .card h2 {
     font-family: 'montserrat_semibold';
@@ -548,23 +551,31 @@ body {
     width: 45%;
 }
 
+.certificate .card a {
+    font-family: 'montserrat_regular';
+    color: var(--color4);
+    text-decoration: none;
+    background-color: var(--color3);
+    padding: 1em 1.6em;
+    border-radius: 15px;
+    transition: 300ms;
+}
+
+.certificate .card a:hover {
+    background-color: #137b4c;
+}
+
 .certificate .card img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     border: 3px solid #403b3b;
     box-sizing: border-box;
-    transition: 300ms;
-    cursor: pointer;
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06),
         0 22.3px 17.9px rgba(0, 0, 0, 0.065);
-}
-
-.certificate .card img:hover {
-    transform: scale(1.02);
 }
 
 .certificate .card h2 {
@@ -624,6 +635,7 @@ body {
 .footer {
     padding: 0 0 3em;
     transition: 300ms;
+    background-color: var(--color4);
 }
 
 .footer a {
@@ -843,7 +855,7 @@ body {
 
     .portfolio-card .card  {
         padding: 0;
-        margin: 0;
+        margin-bottom: 70px;
         width: 100%;
         text-align: center;
     }
@@ -862,7 +874,7 @@ body {
 
     .certificate-card .card  {
         padding: 0;
-        margin: 0;
+        margin-bottom: 70px;
         width: 100%;
         text-align: center;
     }
