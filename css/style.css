@@ -112,7 +112,7 @@ body {
 }
 
 .header nav {
-    margin-left: 30%;
+    margin-left: 25%;
 }
 
 .header .title {
@@ -129,41 +129,44 @@ body {
     transition: 300ms;
 }
 
-.header input[type="checkbox"] {
-    position: relative;
-    width: 40px;
-    height: 20px;
-    appearance: none;
-    background-color: #0a0a0a;
-    border-radius: 10px;
-    transition: .5 ease;
-    cursor: pointer;
+.header .btn-darkmode {
+    width: 60px;
+    height: 30px;
+    background-color: var(--color3);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 7px;
 }
 
-.header input[type="checkbox"]:checked {
-    background-color: #17915a;
+.header .btn-darkmode .theme {
+    transition: 300ms;
 }
 
-.header input[type="checkbox"]::before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    top: 2px;
-    left: 2px;
-    transition: .5s ease;
+.header .btn-darkmode .dark {
+    transition: 300ms;
 }
 
-.header input[type="checkbox"]:checked::before {
-    transform: translateX(20px);
+.header .btn-darkmode .theme:hover {
+    transform: scale(0.9);
 }
 
-.dark {
-    background-color: #161616;
-    transition: .5 ease;
-    color: rgb(246, 246, 246);
+.header .btn-darkmode .theme:active {
+    transform: scale(0.9);
+}
+
+.header .btn-darkmode .dark:hover {
+    transform: scale(0.9);
+}
+
+.header .btn-darkmode .dark:active {
+    transform: scale(0.9);
+}
+
+#darkmode {
+    background-color: #101010;
+    color: #f4f4f4;
 }
 
 .header img {
@@ -778,9 +781,9 @@ body {
         padding: 0;
     }
 
-    .header input {
+    .header .btn-darkmode {
         position: relative;
-        left: 15%;
+        left: 12%;
     }
 
     .beranda {
