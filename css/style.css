@@ -476,6 +476,11 @@ body {
     padding: 1em 1.6em;
     border-radius: 15px;
     transition: 300ms;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.065);
 }
 
 .portfolio-card .card a:hover {
@@ -552,6 +557,7 @@ body {
 
 .certificate .card {
     width: 45%;
+    margin-bottom: 4.5em;
 }
 
 .certificate .card a {
@@ -562,6 +568,11 @@ body {
     padding: 1em 1.6em;
     border-radius: 15px;
     transition: 300ms;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.065);
 }
 
 .certificate .card a:hover {
@@ -644,6 +655,7 @@ body {
 .footer a {
     display: block;
     color: var(--color4);
+    text-decoration: none;
 }
 
 .footer .side-bar1,
@@ -659,7 +671,7 @@ body {
 }
 .footer .side-bar1 p {
     font-family: 'montserrat_regular';
-    line-height: 1.3em;
+    line-height: 1.5em;
 }
 
 .footer .side-bar2 h2 {
