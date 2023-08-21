@@ -457,16 +457,16 @@ body {
 
 .portfolio .portfolio-card {
     margin: 0 1%;
-    padding: 0 7%;
+    padding: 0 5%;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    text-align: center; 
 }
 
 .portfolio .card {
-    width: 45%;
+    width: 43%;
     margin-bottom: 70px;
-}
+    }
 
 .portfolio-card .card a {
     font-family: 'montserrat_regular';
@@ -497,7 +497,7 @@ body {
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.065);
+        0 22.3px 17.9px rgba(0, 0, 0, 0.065); 
 }
 
 
@@ -549,15 +549,14 @@ body {
 
 .certificate .certificate-card {
     margin: 0 1%;
-    padding: 0 7%;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
+    text-align: center; 
 }
 
 .certificate .card {
-    width: 45%;
-    margin-bottom: 4.5em;
+    width: 40%;
+    margin-bottom: 4.5em; 
 }
 
 .certificate .card a {
