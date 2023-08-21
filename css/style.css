@@ -910,6 +910,10 @@ body {
         width: 95%;
     }
 
+    .certificate-card {
+        padding: 0 5%;
+    }
+
     .certificate-card .card  {
         padding: 0;
         margin-bottom: 70px;
